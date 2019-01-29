@@ -9,7 +9,7 @@ import Foundation
 
 /// `RubberBandOverlayTranslationFunction` specifies an overlay that will move linearly between
 /// the translation boundaris and limit its progression once reached.
-public class RubberBandOverlayTranslationFunction: OverlayTranslationFunction {
+open class RubberBandOverlayTranslationFunction: OverlayTranslationFunction {
 
     /// A factor defining how much the translation should be limited once one of the boundaries is reached.
     public var factor: CGFloat = 0.5

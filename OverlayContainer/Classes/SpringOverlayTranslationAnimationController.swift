@@ -17,7 +17,7 @@ private struct Constant {
 }
 
 /// An `OverlayAnimatedTransitioning` implementation based on `UISpringTimingParameters`.
-public class SpringOverlayTranslationAnimationController: OverlayAnimatedTransitioning {
+open class SpringOverlayTranslationAnimationController: OverlayAnimatedTransitioning {
 
     public var mass: CGFloat = Constant.defaultMass
     public var damping: CGFloat = Constant.defaultDamping

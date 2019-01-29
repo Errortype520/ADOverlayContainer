@@ -10,7 +10,7 @@ import UIKit
 /// A `OverlayContainerViewController` is a container view controller that manages one or more
 /// child view controllers in an overlay interface. It defines an area where its children can be dragged up and down
 /// hidding or revealing the content underneath it. The container does not contain this underlying content.
-public class OverlayContainerViewController: UIViewController {
+open class OverlayContainerViewController: UIViewController {
 
     /// `OverlayStyle` defines how the overlay view controllers will be constrained in the container.
     public enum OverlayStyle {
@@ -96,25 +96,25 @@ public class OverlayContainerViewController: UIViewController {
 
     // MARK: - UIViewController
 
-    public override func loadView() {
+    open override func loadView() {
         view = PassThroughView()
         loadTranslationViews()
         loadOverlayViews()
     }
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         setUpPanGesture()
     }
 
-    public override func viewWillLayoutSubviews() {
+    open override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         guard needsOverlayContainerHeightUpdate else { return }
         needsOverlayContainerHeightUpdate = true
         updateOverlayConstraints(forNew: view.bounds.size)
     }
 
-    public override func viewWillTransition(to size: CGSize,
+    open override func viewWillTransition(to size: CGSize,
                                             with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         coordinator.animate(alongsideTransition: { _ in

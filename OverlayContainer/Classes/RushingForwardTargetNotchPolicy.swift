@@ -14,7 +14,7 @@ private struct Constant {
 
 /// `RushingForwardTargetNotchPolicy` specifies an overlay that will always move forward if a
 /// minimum velocity has been reached.
-public class RushingForwardTargetNotchPolicy: OverlayTranslationTargetNotchPolicy {
+open class RushingForwardTargetNotchPolicy: OverlayTranslationTargetNotchPolicy {
 
     /// The minimum velocity to reach to move forward. The default value is 400 pt/s.
     public var minimumVelocity: CGFloat = Constant.minimumVelocity

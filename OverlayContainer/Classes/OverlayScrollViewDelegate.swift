@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol OverlayScrollViewDelegate: class {
+public protocol OverlayScrollViewDelegate: class {
     func overlayScrollViewDidScroll(_ scrollView: UIScrollView)
     func overlayScrollView(_ scrollView: UIScrollView,
                            willEndDraggingwithVelocity velocity: CGPoint,
