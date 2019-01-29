@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D83D72F222009BE800EB3763 /* OverlayTranslationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72CF22009BE800EB3763 /* OverlayTranslationFunction.swift */; };
+		D83D72F422009BE800EB3763 /* RushingForwardTargetNotchPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72D022009BE800EB3763 /* RushingForwardTargetNotchPolicy.swift */; };
+		D83D72F522009BE800EB3763 /* OverlayScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72D122009BE800EB3763 /* OverlayScrollViewDelegate.swift */; };
+		D83D72F622009BE800EB3763 /* OverlayContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72D222009BE800EB3763 /* OverlayContainerViewController.swift */; };
+		D83D72F722009BE800EB3763 /* SpringOverlayTranslationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72D322009BE800EB3763 /* SpringOverlayTranslationAnimationController.swift */; };
+		D83D72F822009BE800EB3763 /* PassThroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72D422009BE800EB3763 /* PassThroughView.swift */; };
+		D83D72F922009BE800EB3763 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D83D72D522009BE800EB3763 /* .gitkeep */; };
+		D83D72FA22009BE800EB3763 /* ConcreteOverlayContainerContextTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72D722009BE800EB3763 /* ConcreteOverlayContainerContextTransitioning.swift */; };
+		D83D72FB22009BE800EB3763 /* ConcreteOverlayContainerContextTargetNotchPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72D822009BE800EB3763 /* ConcreteOverlayContainerContextTargetNotchPolicy.swift */; };
+		D83D72FC22009BE800EB3763 /* ConcreteOverlayTranslationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72D922009BE800EB3763 /* ConcreteOverlayTranslationParameters.swift */; };
+		D83D72FD22009BE800EB3763 /* OverlayScrollViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72DA22009BE800EB3763 /* OverlayScrollViewDelegateProxy.swift */; };
+		D83D72FE22009BE800EB3763 /* OverlayTranslationDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72DB22009BE800EB3763 /* OverlayTranslationDriver.swift */; };
+		D83D72FF22009BE800EB3763 /* UIPanGesture+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72DD22009BE800EB3763 /* UIPanGesture+Utils.swift */; };
+		D83D730022009BE800EB3763 /* CGGeometry+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72DE22009BE800EB3763 /* CGGeometry+Utils.swift */; };
+		D83D730122009BE800EB3763 /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72DF22009BE800EB3763 /* UIView+Constraints.swift */; };
+		D83D730222009BE800EB3763 /* UIViewController+Children.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E022009BE800EB3763 /* UIViewController+Children.swift */; };
+		D83D730322009BE800EB3763 /* OverlayContainerViewControllerDelegate+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E122009BE800EB3763 /* OverlayContainerViewControllerDelegate+Defaults.swift */; };
+		D83D730422009BE800EB3763 /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E222009BE800EB3763 /* UIView+Subviews.swift */; };
+		D83D730522009BE800EB3763 /* UIScrollViiew+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E322009BE800EB3763 /* UIScrollViiew+Utils.swift */; };
+		D83D730622009BE800EB3763 /* OverlayContainerViewControllerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E422009BE800EB3763 /* OverlayContainerViewControllerConfiguration.swift */; };
+		D83D730722009BE800EB3763 /* HeightContraintOverlayTranslationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E522009BE800EB3763 /* HeightContraintOverlayTranslationController.swift */; };
+		D83D730822009BE800EB3763 /* OverlayTranslationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E622009BE800EB3763 /* OverlayTranslationController.swift */; };
+		D83D730922009BE800EB3763 /* InterruptibleAnimatorOverlayContainerTransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E722009BE800EB3763 /* InterruptibleAnimatorOverlayContainerTransitionCoordinator.swift */; };
+		D83D730A22009BE800EB3763 /* PanGestureOverlayTranslationDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E822009BE800EB3763 /* PanGestureOverlayTranslationDriver.swift */; };
+		D83D730B22009BE800EB3763 /* OverlayTranslationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72E922009BE800EB3763 /* OverlayTranslationGestureRecognizer.swift */; };
+		D83D730C22009BE800EB3763 /* ScrollViewOverlayTranslationDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72EA22009BE800EB3763 /* ScrollViewOverlayTranslationDriver.swift */; };
+		D83D730D22009BE800EB3763 /* OverlayTranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72EC22009BE800EB3763 /* OverlayTranslationView.swift */; };
+		D83D730E22009BE800EB3763 /* OverlayContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72ED22009BE800EB3763 /* OverlayContainerView.swift */; };
+		D83D730F22009BE800EB3763 /* RubberBandOverlayTranslationFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72EE22009BE800EB3763 /* RubberBandOverlayTranslationFunction.swift */; };
+		D83D731022009BE800EB3763 /* OverlayContainerTransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72EF22009BE800EB3763 /* OverlayContainerTransitionCoordinator.swift */; };
+		D83D731122009BE800EB3763 /* OverlayTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72F022009BE800EB3763 /* OverlayTransitioningDelegate.swift */; };
+		D83D731222009BE800EB3763 /* OverlayContainerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83D72F122009BE800EB3763 /* OverlayContainerViewControllerDelegate.swift */; };
+		D83D731D22009CB100EB3763 /* OverlayContainerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D83D731B22009CB100EB3763 /* OverlayContainerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D83D732022009CB100EB3763 /* OverlayContainerFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83D731922009CB100EB3763 /* OverlayContainerFramework.framework */; };
+		D83D732122009CB100EB3763 /* OverlayContainerFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D83D731922009CB100EB3763 /* OverlayContainerFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D83D731E22009CB100EB3763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E777DC3021B973FE0004BE81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83D731822009CB100EB3763;
+			remoteInfo = OverlayContainerFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D83D732522009CB100EB3763 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D83D732122009CB100EB3763 /* OverlayContainerFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D83D72CF22009BE800EB3763 /* OverlayTranslationFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTranslationFunction.swift; sourceTree = "<group>"; };
+		D83D72D022009BE800EB3763 /* RushingForwardTargetNotchPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RushingForwardTargetNotchPolicy.swift; sourceTree = "<group>"; };
+		D83D72D122009BE800EB3763 /* OverlayScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScrollViewDelegate.swift; sourceTree = "<group>"; };
+		D83D72D222009BE800EB3763 /* OverlayContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayContainerViewController.swift; sourceTree = "<group>"; };
+		D83D72D322009BE800EB3763 /* SpringOverlayTranslationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringOverlayTranslationAnimationController.swift; sourceTree = "<group>"; };
+		D83D72D422009BE800EB3763 /* PassThroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassThroughView.swift; sourceTree = "<group>"; };
+		D83D72D522009BE800EB3763 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D83D72D722009BE800EB3763 /* ConcreteOverlayContainerContextTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteOverlayContainerContextTransitioning.swift; sourceTree = "<group>"; };
+		D83D72D822009BE800EB3763 /* ConcreteOverlayContainerContextTargetNotchPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteOverlayContainerContextTargetNotchPolicy.swift; sourceTree = "<group>"; };
+		D83D72D922009BE800EB3763 /* ConcreteOverlayTranslationParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcreteOverlayTranslationParameters.swift; sourceTree = "<group>"; };
+		D83D72DA22009BE800EB3763 /* OverlayScrollViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScrollViewDelegateProxy.swift; sourceTree = "<group>"; };
+		D83D72DB22009BE800EB3763 /* OverlayTranslationDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTranslationDriver.swift; sourceTree = "<group>"; };
+		D83D72DD22009BE800EB3763 /* UIPanGesture+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPanGesture+Utils.swift"; sourceTree = "<group>"; };
+		D83D72DE22009BE800EB3763 /* CGGeometry+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGGeometry+Utils.swift"; sourceTree = "<group>"; };
+		D83D72DF22009BE800EB3763 /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		D83D72E022009BE800EB3763 /* UIViewController+Children.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Children.swift"; sourceTree = "<group>"; };
+		D83D72E122009BE800EB3763 /* OverlayContainerViewControllerDelegate+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OverlayContainerViewControllerDelegate+Defaults.swift"; sourceTree = "<group>"; };
+		D83D72E222009BE800EB3763 /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		D83D72E322009BE800EB3763 /* UIScrollViiew+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollViiew+Utils.swift"; sourceTree = "<group>"; };
+		D83D72E422009BE800EB3763 /* OverlayContainerViewControllerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayContainerViewControllerConfiguration.swift; sourceTree = "<group>"; };
+		D83D72E522009BE800EB3763 /* HeightContraintOverlayTranslationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightContraintOverlayTranslationController.swift; sourceTree = "<group>"; };
+		D83D72E622009BE800EB3763 /* OverlayTranslationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTranslationController.swift; sourceTree = "<group>"; };
+		D83D72E722009BE800EB3763 /* InterruptibleAnimatorOverlayContainerTransitionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterruptibleAnimatorOverlayContainerTransitionCoordinator.swift; sourceTree = "<group>"; };
+		D83D72E822009BE800EB3763 /* PanGestureOverlayTranslationDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanGestureOverlayTranslationDriver.swift; sourceTree = "<group>"; };
+		D83D72E922009BE800EB3763 /* OverlayTranslationGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTranslationGestureRecognizer.swift; sourceTree = "<group>"; };
+		D83D72EA22009BE800EB3763 /* ScrollViewOverlayTranslationDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewOverlayTranslationDriver.swift; sourceTree = "<group>"; };
+		D83D72EC22009BE800EB3763 /* OverlayTranslationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTranslationView.swift; sourceTree = "<group>"; };
+		D83D72ED22009BE800EB3763 /* OverlayContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayContainerView.swift; sourceTree = "<group>"; };
+		D83D72EE22009BE800EB3763 /* RubberBandOverlayTranslationFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RubberBandOverlayTranslationFunction.swift; sourceTree = "<group>"; };
+		D83D72EF22009BE800EB3763 /* OverlayContainerTransitionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayContainerTransitionCoordinator.swift; sourceTree = "<group>"; };
+		D83D72F022009BE800EB3763 /* OverlayTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayTransitioningDelegate.swift; sourceTree = "<group>"; };
+		D83D72F122009BE800EB3763 /* OverlayContainerViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayContainerViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D83D731322009C0C00EB3763 /* OverlayContainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverlayContainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83D731922009CB100EB3763 /* OverlayContainerFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OverlayContainerFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83D731B22009CB100EB3763 /* OverlayContainerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayContainerFramework.h; sourceTree = "<group>"; };
+		D83D731C22009CB100EB3763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D83D731622009CB100EB3763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E777DC3521B973FE0004BE81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83D732022009CB100EB3763 /* OverlayContainerFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D83D72CD22009BE800EB3763 /* OverlayContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D83D72CE22009BE800EB3763 /* Classes */,
+			);
+			path = OverlayContainer;
+			sourceTree = "<group>";
+		};
+		D83D72CE22009BE800EB3763 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D83D72CF22009BE800EB3763 /* OverlayTranslationFunction.swift */,
+				D83D72D022009BE800EB3763 /* RushingForwardTargetNotchPolicy.swift */,
+				D83D72D122009BE800EB3763 /* OverlayScrollViewDelegate.swift */,
+				D83D72D222009BE800EB3763 /* OverlayContainerViewController.swift */,
+				D83D72D322009BE800EB3763 /* SpringOverlayTranslationAnimationController.swift */,
+				D83D72D422009BE800EB3763 /* PassThroughView.swift */,
+				D83D72D522009BE800EB3763 /* .gitkeep */,
+				D83D72D622009BE800EB3763 /* Internal */,
+				D83D72EE22009BE800EB3763 /* RubberBandOverlayTranslationFunction.swift */,
+				D83D72EF22009BE800EB3763 /* OverlayContainerTransitionCoordinator.swift */,
+				D83D72F022009BE800EB3763 /* OverlayTransitioningDelegate.swift */,
+				D83D72F122009BE800EB3763 /* OverlayContainerViewControllerDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D83D72D622009BE800EB3763 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				D83D72D722009BE800EB3763 /* ConcreteOverlayContainerContextTransitioning.swift */,
+				D83D72D822009BE800EB3763 /* ConcreteOverlayContainerContextTargetNotchPolicy.swift */,
+				D83D72D922009BE800EB3763 /* ConcreteOverlayTranslationParameters.swift */,
+				D83D72DA22009BE800EB3763 /* OverlayScrollViewDelegateProxy.swift */,
+				D83D72DB22009BE800EB3763 /* OverlayTranslationDriver.swift */,
+				D83D72DC22009BE800EB3763 /* Extensions */,
+				D83D72E422009BE800EB3763 /* OverlayContainerViewControllerConfiguration.swift */,
+				D83D72E522009BE800EB3763 /* HeightContraintOverlayTranslationController.swift */,
+				D83D72E622009BE800EB3763 /* OverlayTranslationController.swift */,
+				D83D72E722009BE800EB3763 /* InterruptibleAnimatorOverlayContainerTransitionCoordinator.swift */,
+				D83D72E822009BE800EB3763 /* PanGestureOverlayTranslationDriver.swift */,
+				D83D72E922009BE800EB3763 /* OverlayTranslationGestureRecognizer.swift */,
+				D83D72EA22009BE800EB3763 /* ScrollViewOverlayTranslationDriver.swift */,
+				D83D72EB22009BE800EB3763 /* Views */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		D83D72DC22009BE800EB3763 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D83D72DD22009BE800EB3763 /* UIPanGesture+Utils.swift */,
+				D83D72DE22009BE800EB3763 /* CGGeometry+Utils.swift */,
+				D83D72DF22009BE800EB3763 /* UIView+Constraints.swift */,
+				D83D72E022009BE800EB3763 /* UIViewController+Children.swift */,
+				D83D72E122009BE800EB3763 /* OverlayContainerViewControllerDelegate+Defaults.swift */,
+				D83D72E222009BE800EB3763 /* UIView+Subviews.swift */,
+				D83D72E322009BE800EB3763 /* UIScrollViiew+Utils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D83D72EB22009BE800EB3763 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D83D72EC22009BE800EB3763 /* OverlayTranslationView.swift */,
+				D83D72ED22009BE800EB3763 /* OverlayContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D83D731A22009CB100EB3763 /* OverlayContainerFramework */ = {
+			isa = PBXGroup;
+			children = (
+				D83D731B22009CB100EB3763 /* OverlayContainerFramework.h */,
+				D83D731C22009CB100EB3763 /* Info.plist */,
+			);
+			path = OverlayContainerFramework;
+			sourceTree = "<group>";
+		};
+		E777DC2F21B973FE0004BE81 = {
+			isa = PBXGroup;
+			children = (
+				D83D72CD22009BE800EB3763 /* OverlayContainer */,
+				D83D731322009C0C00EB3763 /* OverlayContainer.app */,
+				D83D731922009CB100EB3763 /* OverlayContainerFramework.framework */,
+				D83D731A22009CB100EB3763 /* OverlayContainerFramework */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D83D731422009CB100EB3763 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83D731D22009CB100EB3763 /* OverlayContainerFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D83D731822009CB100EB3763 /* OverlayContainerFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83D732222009CB100EB3763 /* Build configuration list for PBXNativeTarget "OverlayContainerFramework" */;
+			buildPhases = (
+				D83D731422009CB100EB3763 /* Headers */,
+				D83D731522009CB100EB3763 /* Sources */,
+				D83D731622009CB100EB3763 /* Frameworks */,
+				D83D731722009CB100EB3763 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverlayContainerFramework;
+			productName = OverlayContainerFramework;
+			productReference = D83D731922009CB100EB3763 /* OverlayContainerFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E777DC3721B973FE0004BE81 /* OverlayContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E777DC4A21B973FF0004BE81 /* Build configuration list for PBXNativeTarget "OverlayContainer" */;
+			buildPhases = (
+				2513A44CE1E168E7EF7048CF /* [CP] Check Pods Manifest.lock */,
+				E777DC3421B973FE0004BE81 /* Sources */,
+				E777DC3521B973FE0004BE81 /* Frameworks */,
+				E777DC3621B973FE0004BE81 /* Resources */,
+				0B6DB2DD685F5EC44ED40A0D /* [CP] Embed Pods Frameworks */,
+				D83D732522009CB100EB3763 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83D731F22009CB100EB3763 /* PBXTargetDependency */,
+			);
+			name = OverlayContainer;
+			productName = OverlayContainer;
+			productReference = D83D731322009C0C00EB3763 /* OverlayContainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E777DC3021B973FE0004BE81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Gaétan Zanella";
+				TargetAttributes = {
+					D83D731822009CB100EB3763 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E777DC3721B973FE0004BE81 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = E777DC3321B973FE0004BE81 /* Build configuration list for PBXProject "OverlayContainer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E777DC2F21B973FE0004BE81;
+			productRefGroup = E777DC2F21B973FE0004BE81;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E777DC3721B973FE0004BE81 /* OverlayContainer */,
+				D83D731822009CB100EB3763 /* OverlayContainerFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D83D731722009CB100EB3763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E777DC3621B973FE0004BE81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83D72F922009BE800EB3763 /* .gitkeep in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B6DB2DD685F5EC44ED40A0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OverlayContainer_Example/Pods-OverlayContainer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OverlayContainer/OverlayContainer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OverlayContainer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OverlayContainer_Example/Pods-OverlayContainer_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2513A44CE1E168E7EF7048CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OverlayContainer_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D83D731522009CB100EB3763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E777DC3421B973FE0004BE81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83D730022009BE800EB3763 /* CGGeometry+Utils.swift in Sources */,
+				D83D730222009BE800EB3763 /* UIViewController+Children.swift in Sources */,
+				D83D731022009BE800EB3763 /* OverlayContainerTransitionCoordinator.swift in Sources */,
+				D83D730322009BE800EB3763 /* OverlayContainerViewControllerDelegate+Defaults.swift in Sources */,
+				D83D730522009BE800EB3763 /* UIScrollViiew+Utils.swift in Sources */,
+				D83D730B22009BE800EB3763 /* OverlayTranslationGestureRecognizer.swift in Sources */,
+				D83D730722009BE800EB3763 /* HeightContraintOverlayTranslationController.swift in Sources */,
+				D83D72FA22009BE800EB3763 /* ConcreteOverlayContainerContextTransitioning.swift in Sources */,
+				D83D730D22009BE800EB3763 /* OverlayTranslationView.swift in Sources */,
+				D83D730E22009BE800EB3763 /* OverlayContainerView.swift in Sources */,
+				D83D730922009BE800EB3763 /* InterruptibleAnimatorOverlayContainerTransitionCoordinator.swift in Sources */,
+				D83D731122009BE800EB3763 /* OverlayTransitioningDelegate.swift in Sources */,
+				D83D730622009BE800EB3763 /* OverlayContainerViewControllerConfiguration.swift in Sources */,
+				D83D72FB22009BE800EB3763 /* ConcreteOverlayContainerContextTargetNotchPolicy.swift in Sources */,
+				D83D730C22009BE800EB3763 /* ScrollViewOverlayTranslationDriver.swift in Sources */,
+				D83D730122009BE800EB3763 /* UIView+Constraints.swift in Sources */,
+				D83D72F422009BE800EB3763 /* RushingForwardTargetNotchPolicy.swift in Sources */,
+				D83D72F522009BE800EB3763 /* OverlayScrollViewDelegate.swift in Sources */,
+				D83D730822009BE800EB3763 /* OverlayTranslationController.swift in Sources */,
+				D83D730422009BE800EB3763 /* UIView+Subviews.swift in Sources */,
+				D83D72FC22009BE800EB3763 /* ConcreteOverlayTranslationParameters.swift in Sources */,
+				D83D730A22009BE800EB3763 /* PanGestureOverlayTranslationDriver.swift in Sources */,
+				D83D72F222009BE800EB3763 /* OverlayTranslationFunction.swift in Sources */,
+				D83D72FD22009BE800EB3763 /* OverlayScrollViewDelegateProxy.swift in Sources */,
+				D83D72FF22009BE800EB3763 /* UIPanGesture+Utils.swift in Sources */,
+				D83D72F822009BE800EB3763 /* PassThroughView.swift in Sources */,
+				D83D72F722009BE800EB3763 /* SpringOverlayTranslationAnimationController.swift in Sources */,
+				D83D72FE22009BE800EB3763 /* OverlayTranslationDriver.swift in Sources */,
+				D83D72F622009BE800EB3763 /* OverlayContainerViewController.swift in Sources */,
+				D83D730F22009BE800EB3763 /* RubberBandOverlayTranslationFunction.swift in Sources */,
+				D83D731222009BE800EB3763 /* OverlayContainerViewControllerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D83D731F22009CB100EB3763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83D731822009CB100EB3763 /* OverlayContainerFramework */;
+			targetProxy = D83D731E22009CB100EB3763 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D83D732322009CB100EB3763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C7G63Q6LZ9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OverlayContainerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.overlayContainerFramework.OverlayContainerFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D83D732422009CB100EB3763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C7G63Q6LZ9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OverlayContainerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.overlayContainerFramework.OverlayContainerFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E777DC4821B973FF0004BE81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E777DC4921B973FF0004BE81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E777DC4B21B973FF0004BE81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7G63Q6LZ9;
+				INFOPLIST_FILE = OverlayContainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaetanzanella.OverlayContainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E777DC4C21B973FF0004BE81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7G63Q6LZ9;
+				INFOPLIST_FILE = OverlayContainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gaetanzanella.OverlayContainer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D83D732222009CB100EB3763 /* Build configuration list for PBXNativeTarget "OverlayContainerFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83D732322009CB100EB3763 /* Debug */,
+				D83D732422009CB100EB3763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E777DC3321B973FE0004BE81 /* Build configuration list for PBXProject "OverlayContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E777DC4821B973FF0004BE81 /* Debug */,
+				E777DC4921B973FF0004BE81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E777DC4A21B973FF0004BE81 /* Build configuration list for PBXNativeTarget "OverlayContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E777DC4B21B973FF0004BE81 /* Debug */,
+				E777DC4C21B973FF0004BE81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E777DC3021B973FE0004BE81 /* Project object */;
+}
