@@ -97,7 +97,7 @@ class HeightContrainstOverlayTranslationController: OverlayTranslationController
         let height = translationHeight
         translationEndNotchIndex = index
         dragOverlay(toHeight: translationEndNotchHeight)
-        guard animated else { return }
+        guard animated, #available(iOS 10.0, *) else { return }
         let context = ConcreteOverlayContainerContextTransitioning(
             overlayViewController: overlay,
             overlayTranslationHeight: height,

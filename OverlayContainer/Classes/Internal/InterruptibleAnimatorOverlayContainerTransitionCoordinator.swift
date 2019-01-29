@@ -32,15 +32,19 @@ class InterruptibleAnimatorOverlayContainerTransitionCoordinator: OverlayContain
         self.animator = animator
         self.context = context
     }
-
+    
     func animate(alongsideTransition animation: ((OverlayContainerTransitionCoordinatorContext) -> Void)?,
                  completion: ((OverlayContainerTransitionCoordinatorContext) -> Void)?) {
         let context = self.context
         animator.addAnimations? {
             animation?(context)
         }
-        animator.addCompletion? { _ in
-            completion?(context)
+        if #available(iOS 10.0, *) {
+            animator.addCompletion? { _ in
+                completion?(context)
+            }
+        } else {
+            // Fallback on earlier versions
         }
     }
 

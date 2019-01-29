@@ -59,7 +59,8 @@ class OverlayContainerViewControllerConfiguration {
     func sortedHeights() -> [CGFloat] {
         return Array(notchHeightByIndex.values.sorted())
     }
-
+    
+    @available(iOS 10.0, *)
     func animationController(forOverlay overlay: UIViewController) -> OverlayAnimatedTransitioning {
         guard let controller = overlayContainerViewController else {
             return SpringOverlayTranslationAnimationController()

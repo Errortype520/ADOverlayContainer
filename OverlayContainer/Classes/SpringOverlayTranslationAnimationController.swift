@@ -17,6 +17,7 @@ private struct Constant {
 }
 
 /// An `OverlayAnimatedTransitioning` implementation based on `UISpringTimingParameters`.
+@available(iOS 10.0, *)
 open class SpringOverlayTranslationAnimationController: OverlayAnimatedTransitioning {
 
     public var mass: CGFloat = Constant.defaultMass
@@ -37,6 +38,7 @@ open class SpringOverlayTranslationAnimationController: OverlayAnimatedTransitio
         let velocityRange = Constant.maximumVelocityConsideration - Constant.minimumVelocityConsideration
         let normalizedVelocity = (velocity - Constant.minimumVelocityConsideration) / velocityRange
         let normalizedDamping = normalizedVelocity * (damping - Constant.minimumDamping) + Constant.minimumDamping
+        
         let timing = UISpringTimingParameters(
             damping: normalizedDamping,
             response: response,
@@ -49,6 +51,7 @@ open class SpringOverlayTranslationAnimationController: OverlayAnimatedTransitio
     }
 }
 
+@available(iOS 10.0, *)
 extension UISpringTimingParameters {
     convenience init(damping: CGFloat, response: CGFloat, mass: CGFloat) {
         let stiffness = pow(2 * .pi / response, 2)
