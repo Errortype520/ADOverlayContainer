@@ -137,6 +137,26 @@ open class OverlayContainerViewController: UIViewController {
     public func reloadData() {
         self.configuration.reloadNotchHeights()
     }
+    
+    public func heightIsBetween(indexes notches: Int...) -> Bool {
+        
+        guard notches.count > 0 else { return false }
+        
+        var minHeight = self.configuration.heightForNotch(at: notches[0])
+        var maxHeight = self.configuration.heightForNotch(at: notches[0])
+        
+        for index in notches {
+            
+            guard index < self.configuration.numberOfNotches() else { continue }
+            
+            let notchPosition = self.configuration.heightForNotch(at: index)
+            minHeight = min(minHeight, notchPosition)
+            maxHeight = max(maxHeight, notchPosition)
+        }
+        
+        let currentHeight = self.translationController?.translationHeight ?? 0
+        return currentHeight >= minHeight && currentHeight <= maxHeight
+    }
 
     // MARK: - Private
 
