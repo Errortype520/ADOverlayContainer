@@ -65,7 +65,7 @@ open class OverlayContainerViewController: UIViewController {
     private var overlayContainerViewStyleConstraint: NSLayoutConstraint?
     private var translationHeightConstraint: NSLayoutConstraint?
 
-    private(set) public lazy var configuration: OverlayContainerViewControllerConfiguration = self.makeConfiguration()
+    private lazy var configuration: OverlayContainerViewControllerConfiguration = self.makeConfiguration()
 
     private var needsOverlayContainerHeightUpdate = true {
         didSet {
@@ -132,6 +132,10 @@ open class OverlayContainerViewController: UIViewController {
     public func moveOverlay(toNotchAt index: Int, animated: Bool) {
         view.layoutIfNeeded()
         translationController?.moveOverlay(toNotchAt: index, velocity: .zero, animated: animated)
+    }
+    
+    public func reloadData() {
+        self.configuration.reloadNotchHeights()
     }
 
     // MARK: - Private
