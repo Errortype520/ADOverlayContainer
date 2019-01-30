@@ -65,7 +65,7 @@ open class OverlayContainerViewController: UIViewController {
     private var overlayContainerViewStyleConstraint: NSLayoutConstraint?
     private var translationHeightConstraint: NSLayoutConstraint?
 
-    private(set) lazy var configuration: OverlayContainerViewControllerConfiguration = self.makeConfiguration()
+    private(set) public lazy var configuration: OverlayContainerViewControllerConfiguration = self.makeConfiguration()
 
     private var needsOverlayContainerHeightUpdate = true {
         didSet {

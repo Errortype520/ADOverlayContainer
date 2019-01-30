@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OverlayContainerViewControllerConfiguration {
+open class OverlayContainerViewControllerConfiguration {
 
     private weak var overlayContainerViewController: OverlayContainerViewController?
 
