@@ -39,7 +39,7 @@ open class OverlayContainerViewControllerConfiguration {
 
     // MARK: - Public
 
-    func reloadNotchHeights() {
+    public func reloadNotchHeights() {
         let numberOfNotches = requestNumberOfNotches()
         assert(numberOfNotches >= 0, "The number of notches must be positive.")
         let heights = (0..<numberOfNotches).map { requestHeightForNotch(at: $0) }
